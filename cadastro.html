@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Criar conta | ElectroHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cadastro_.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="in">
+    <a class="logo" href="catalogo.html" aria-label="ElectroHub, página inicial">
+      <span class="logo-mark"><i data-i="bolt" data-s="20"></i></span>Electro<b>Hub</b>
+    </a>
+    <div class="right">
+      <div class="secure"><i data-i="shieldok" data-s="16"></i><span>Ambiente 100% seguro</span></div>
+      <a class="link" href="catalogo.html">Voltar à loja <i data-i="ext" data-s="12"></i></a>
+    </div>
+  </div>
+</header>
+
+<main class="split">
+  <section class="side">
+    <p class="eyebrow">01 / Sua conta ElectroHub</p>
+    <h1 class="h-lg">Um cadastro.<br>Infinitas possibilidades.</h1>
+    <p class="lead">Crie sua conta e dê o próximo passo no seu setup. Comprar tecnologia pode ser simples.</p>
+    <ul class="feat">
+      <li><span class="tile"><i data-i="box" data-s="18"></i></span><div><strong>Tudo sobre seus pedidos</strong><span>Acompanhe cada etapa em um só lugar.</span></div></li>
+      <li><span class="tile"><i data-i="heart" data-s="18"></i></span><div><strong>Seu próximo upgrade</strong><span>Salve favoritos e encontre suas peças.</span></div></li>
+      <li><span class="tile"><i data-i="shield" data-s="18"></i></span><div><strong>Seus dados protegidos</strong><span>Segurança em todas as suas compras.</span></div></li>
+    </ul>
+    <div class="callout">
+      <strong>Já tem uma conta?</strong>
+      <a class="link" href="login.html" style="font-weight:500;font-size:12.5px">Entre na ElectroHub <i data-i="arrow" data-s="13"></i></a>
+    </div>
+    <p class="tiny">Dados ilustrativos para demonstração da interface.</p>
+  </section>
+
+  <section class="card-form" aria-labelledby="t">
+    <div class="card-head">
+      <div>
+        <h1 id="t">Crie sua conta</h1>
+        <p>Preencha seus dados. Campos com * são obrigatórios.</p>
+      </div>
+      <i data-i="userplus" data-s="22"></i>
+    </div>
+
+    <form data-validate data-success="Conta criada! Vamos para o login…" data-redirect="login.html" novalidate>
+      <div class="fsec"><small>01</small><h2>Dados pessoais</h2></div>
+      <div class="grid g2">
+        <div class="field"><label for="nome">Nome completo *</label><div class="input"><input id="nome" name="nome" placeholder="Rafael Almeida Costa" autocomplete="name" required></div></div>
+        <div class="field"><label for="cpf">CPF *</label><div class="input"><input id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" data-mask="cpf" data-len="11" required></div></div>
+      </div>
+      <div class="grid g2">
+        <div class="field"><label for="nasc">Data de nascimento *</label><div class="input"><input id="nasc" name="nasc" inputmode="numeric" placeholder="15/08/1995" data-mask="date" data-len="8" autocomplete="bday" required></div></div>
+        <div class="field"><label for="cel">Celular *</label><div class="input"><input id="cel" name="cel" type="tel" placeholder="(11) 99999-1234" data-mask="phone" autocomplete="tel" required></div></div>
+      </div>
+
+      <div class="fsec"><small>02</small><h2>Contato e acesso</h2></div>
+      <div class="grid g2">
+        <div class="field"><label for="email">E-mail *</label><div class="input"><input id="email" name="email" type="email" placeholder="rafael.costa@example.com" autocomplete="email" required></div></div>
+        <div class="field"><label for="email2">Confirmar e-mail *</label><div class="input"><input id="email2" name="email2" type="email" placeholder="rafael.costa@example.com" data-match="email" required></div></div>
+      </div>
+      <div class="grid g2">
+        <div class="field"><label for="senha">Senha *</label><div class="input"><input id="senha" name="senha" type="password" placeholder="••••••••••••" data-password="1" autocomplete="new-password" required><button type="button" class="toggle" aria-label="Mostrar senha"><i data-i="eyeoff" data-s="16"></i></button></div></div>
+        <div class="field"><label for="senha2">Confirmar senha *</label><div class="input"><input id="senha2" name="senha2" type="password" placeholder="••••••••••••" data-match="senha" autocomplete="new-password" required><button type="button" class="toggle" aria-label="Mostrar senha"><i data-i="eyeoff" data-s="16"></i></button></div></div>
+      </div>
+
+      <div class="fsec"><small>03</small><h2>Endereço de entrega</h2></div>
+      <div class="grid g-cep">
+        <div class="field"><label for="cep">CEP *</label><div class="input"><input id="cep" name="cep" inputmode="numeric" placeholder="05422-001" data-mask="cep" data-len="8" autocomplete="postal-code" required></div></div>
+        <div class="field"><label for="rua">Rua / Avenida *</label><div class="input"><input id="rua" name="rua" placeholder="Rua dos Pinheiros" autocomplete="address-line1" required></div></div>
+      </div>
+      <div class="grid g-cep">
+        <div class="field"><label for="numero">Número *</label><div class="input"><input id="numero" name="numero" placeholder="870" required></div></div>
+        <div class="field"><label for="comp">Complemento</label><div class="input"><input id="comp" name="comp" placeholder="Apartamento 42"></div></div>
+      </div>
+      <div class="grid g-city">
+        <div class="field"><label for="bairro">Bairro *</label><div class="input"><input id="bairro" name="bairro" placeholder="Pinheiros" required></div></div>
+        <div class="field"><label for="cidade">Cidade *</label><div class="input"><input id="cidade" name="cidade" placeholder="São Paulo" required></div></div>
+        <div class="field"><label for="uf">UF *</label><div class="input"><select id="uf" name="uf" required>
+          <option value="">UF</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option>
+        </select><i data-i="chev" data-s="14"></i></div></div>
+      </div>
+
+      <div class="form-foot">
+        <p class="hint">Use uma senha com 8 ou mais caracteres, letras e números.</p>
+        <label class="chk"><input type="checkbox" name="termos" required><span>Li e aceito os Termos de uso e a Política de privacidade. *</span></label>
+        <label class="chk"><input type="checkbox" name="ofertas"><span>Quero receber ofertas e novidades por e-mail.</span></label>
+        <button class="btn btn-primary" type="submit">Criar minha conta <i data-i="arrow" data-s="16"></i></button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="in">
+    <span>© 2026 ElectroHub. Todos os direitos reservados.</span>
+    <ul><li><a href="#">Privacidade e LGPD</a></li><li><a href="#">Termos de uso</a></li><li><a href="#">Compra protegida</a></li></ul>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
