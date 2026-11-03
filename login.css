@@ -1,0 +1,115 @@
+  .auth{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-top:1px solid var(--line)
+  }
+  .auth-left{
+    background:#fff;
+    padding:56px 48px;
+    display:flex;
+    align-items:center;
+    justify-content:center
+  }
+  .auth-left .box{
+    width:100%;
+    max-width:440px
+  }
+  .auth-left .h-xl{
+    margin:14px 0 14px
+  }
+  .auth-left form{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:18px
+  }
+  .row-between{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px
+  }
+  .divider{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    font-size:11px;
+    letter-spacing:.08em;
+    color:var(--muted);
+    text-transform:uppercase
+  }
+  .divider::before,.divider::after{
+    content:"";
+    height:1px;
+    background:var(--line);
+    flex:1
+  }
+  .small-note{
+    text-align:center;
+    font-size:12.5px;
+    color:var(--muted)
+  }
+  .auth-right{
+    background:var(--deep);
+    color:#fff;
+    padding:48px 48px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:28px
+  }
+  .auth-right>*{
+    width:100%;
+    max-width:640px;
+    margin-inline:auto
+  }
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:7px 14px;
+    border-radius:99px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.14);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    width:auto
+  }
+  .auth-right h2{
+    font-size:clamp(32px,3.6vw,44px);
+    line-height:1.08;
+    letter-spacing:-.035em;
+    font-weight:700;
+    text-wrap:balance
+  }
+  .scene{
+    border-radius:20px;
+    overflow:hidden;
+    aspect-ratio:560/250;
+    background:#10131f
+  }
+  .scene svg{
+    display:block;
+    width:100%;
+    height:100%
+  }
+  .perks{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px
+  }
+  .perk{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    font-size:12px;
+    color:rgba(255,255,255,.7)
+  }
+  .perk strong{
+    display:block;
+    color:#fff;
+    font-size:12.5px
+  }

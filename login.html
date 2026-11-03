@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entrar | ElectroHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="login.css">
+</head>
+<body class="theme-white">
+
+<header class="topbar">
+  <div class="in">
+    <a class="logo" href="catalogo.html" aria-label="ElectroHub, página inicial">
+      <span class="logo-mark"><i data-i="bolt" data-s="20"></i></span>Electro<b>Hub</b>
+    </a>
+    <div class="right">
+      <div class="secure"><i data-i="shieldok" data-s="16"></i><span>Ambiente 100% seguro</span></div>
+      <a class="link" href="catalogo.html">Voltar à loja <i data-i="ext" data-s="12"></i></a>
+    </div>
+  </div>
+</header>
+
+<main class="auth">
+  <section class="auth-left">
+    <div class="box">
+      <p class="eyebrow">01 / Conecte-se às possibilidades</p>
+      <h1 class="h-xl">Seu próximo upgrade começa aqui.</h1>
+      <p class="lead">Entre na sua conta para acompanhar pedidos e encontrar as peças certas para o seu setup.</p>
+
+      <form data-validate data-success="Login realizado! Redirecionando…" data-redirect="catalogo.html" novalidate>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <div class="input">
+            <i data-i="mail" data-s="16"></i>
+            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="senha">Senha</label>
+          <div class="input">
+            <i data-i="lock" data-s="16"></i>
+            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required>
+            <button type="button" class="toggle" aria-label="Mostrar senha"><i data-i="eyeoff" data-s="16"></i></button>
+          </div>
+        </div>
+        <div class="row-between">
+          <label class="chk"><input type="checkbox" name="lembrar"><span>Lembrar de mim</span></label>
+          <a class="link" href="#" style="font-weight:500;font-size:12px">Esqueci minha senha</a>
+        </div>
+        <button class="btn btn-primary" type="submit">Entrar na minha conta <i data-i="arrow" data-s="16"></i></button>
+        <div class="divider">Novo por aqui?</div>
+        <a class="btn btn-ghost" href="cadastro.html">Criar minha conta</a>
+        <p class="small-note">Quer vender com a gente? <a class="link" href="fornecedor.html" style="font-weight:500;font-size:12.5px">Seja fornecedor <i data-i="ext" data-s="11"></i></a></p>
+      </form>
+    </div>
+  </section>
+
+  <aside class="auth-right" aria-label="Destaques da ElectroHub">
+    <span class="pill"><i data-i="bolt" data-s="13"></i>Tecnologia que acompanha você</span>
+    <h2>Mais desempenho.<br>Mais possibilidades.</h2>
+    <div class="scene" data-art="desk"></div>
+    <div class="perks">
+      <div class="perk"><i data-i="shieldok" data-s="20"></i><div><strong>Compra protegida</strong>Do clique à entrega</div></div>
+      <div class="perk"><i data-i="truck" data-s="20"></i><div><strong>Envio para todo o Brasil</strong>Seu setup, onde estiver</div></div>
+    </div>
+  </aside>
+</main>
+
+<footer class="foot">
+  <div class="in">
+    <span>© 2026 ElectroHub. Todos os direitos reservados.</span>
+    <ul><li><a href="#">Privacidade e LGPD</a></li><li><a href="#">Termos de uso</a></li><li><a href="#">Compra protegida</a></li></ul>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
